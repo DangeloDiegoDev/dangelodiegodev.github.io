@@ -1,0 +1,17 @@
+---
+import AnimatedSkillText from "./AnimatedSkillText.tsx";
+import "./Hero.css";
+---
+
+<div style="height: calc(100vh - 56px)" class="h-screen pt-14 pb-28 box-content flex flex-col justify-center items-center gap-10 md:flex-row md:gap-36 overflow-hidden">
+    <div class="items-start flex w-80 min-h-[72px]">
+        <AnimatedSkillText client:only />
+    </div>
+    <div class="relative">
+        <div class="w-[300px] h-[400px] relative shadow-[0_0_100px_20px_rgba(244,63,94,0.7)] blur-sm bg-transparent shadow-rose-500 rounded-[60px]">
+            <div class="w-[300px] h-[400px] items-center flex shadow-[inset_-10px_-10px_200px_0px_rgba(244,63,94,0.89)] rounded-[60px] bg-transparent">
+            </div>
+        </div>
+        <img id="diego" src="/diego.jpg" alt="Diego D'Angelo" width="300px" class="absolute border-2 border-rose-500 rounded">
+    </div>
+</div>

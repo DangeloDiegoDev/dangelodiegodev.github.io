@@ -1,0 +1,14 @@
+#diego {
+    left: 100vw;
+    animation-name: enter;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: both;
+}
+
+@keyframes enter {
+    to {
+        left: 0;
+        top: 0;
+    }
+}

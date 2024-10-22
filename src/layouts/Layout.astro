@@ -1,0 +1,40 @@
+---
+interface Props {
+    title: string;
+}
+
+const { title } = Astro.props;
+
+import { fade } from 'astro/transitions';
+import { ViewTransitions } from 'astro:transitions';
+import Header from '../components/Header.tsx';
+---
+
+<!doctype html>
+<html lang="" transition:animate={fade()}>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Temporal description..." />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="generator" content={Astro.generator} />
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Nunito&family=Poppins:wght@300;400;500;600;700&display=swap');
+        </style>
+        <title>{title}</title>
+        <ViewTransitions />
+    </head>
+    <body class=" flex flex-col gap-48">
+        <Header client:only />
+        <slot />
+    </body>
+</html>
+
+<style is:global>
+    :root {
+        color-scheme: dark;
+        font-family: 'Poppins', sans-serif;
+        scroll-behavior: smooth;
+        background: linear-gradient(to top right, rgb(129, 14, 14) 0%, rgb(5, 27, 63) 20%, rgb(5, 27, 63) 70%, rgb(129, 14, 14) 90%);
+    }
+</style>

@@ -1,0 +1,27 @@
+span {
+    animation-name: twinkle;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+
+@keyframes twinkle {
+    0% {
+        color: rgb(29, 78, 216);
+        opacity: 0;
+    }
+    20% {
+        color: rgb(244, 63, 94);
+        opacity: 1;
+    }
+    80% {
+        color: rgb(244, 63, 94);
+        opacity: 1;
+    }
+    100% {
+        color: rgb(29, 78, 216);
+        opacity: 0;
+    }
+}
