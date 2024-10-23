@@ -20,8 +20,8 @@ const ProjectsComponent = () => {
         <div className="grid grid-cols-[repeat(2,minmax(0,431px))] max-md:grid-cols-1 gap-20 mt-28">
             {sliders.map((slider, index) => (
                 <div key={index} className="slider animation-reveal" style={{'--slide-name': slider.images.length === 3 && "threeImagesSlide" || slider.images.length === 4 && "fourImagesSlide", '--total-items': slider.images.length} as React.CSSProperties}>
-                    <div className="bg-rose-500 rounded-md p-2 min-h-[72px] flex items-center justify-center">
-                        <a href={slider.link} target="_blank" className="bg-rose-500 text-center">
+                    <div className="bg-rose-500 hover:bg-rose-600 cursor-pointer rounded-md p-2 min-h-[72px] flex items-center justify-center">
+                        <a href={slider.link} target="_blank" className="text-center">
                             <h1 className="text-xl text-center">{slider.title}</h1>
                         </a>
                     </div>
