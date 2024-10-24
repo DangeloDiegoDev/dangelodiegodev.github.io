@@ -8,7 +8,7 @@ const About = () => {
         <div>
             <h2 className="font-bold text-3xl text-center mb-10">{$selectedLanguage.about_me}</h2>
             <div className='border-2 w-[300px] h-[300px] rounded-full overflow-hidden relative'>
-                <img src="/diego.jpg" width="300px" className='absolute -top-7' />
+                <img src="/diego.jpg" width="300px" className="absolute -top-7" />
             </div>
         </div>
         <section className="w-2/4 h-full flex flex-col gap-10 justify-center">

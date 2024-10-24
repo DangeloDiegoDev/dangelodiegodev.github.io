@@ -28,7 +28,9 @@ const ProjectsComponent = () => {
                     <div className="overflow-hidden">
                         <div className="slides">
                             {slider.images.map((e, index) => (
-                                <img src={e} key={index} />
+                                <a href={e} key={index} target="_blank" className="min-w-full h-auto cursor-zoom-in">
+                                    <img src={e} />
+                                </a>
                             ))}
                         </div>
                     </div>

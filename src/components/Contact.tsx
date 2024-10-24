@@ -1,3 +1,4 @@
+import "./Contact.css";
 import { useState, useEffect, useRef } from 'react';
 import { selectedLanguage } from '../services/languageService.js';
 import { useStore } from '@nanostores/react';
