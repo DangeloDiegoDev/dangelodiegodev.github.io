@@ -29,6 +29,7 @@ const Skills = () => {
             <img title='Prisma' src='prisma.svg' className='w-24 h-24' />
             <img title='React Hook Form' src='hook-form.svg' className='w-24 h-24' />
             <img title='Zod' src='zod.svg' className='w-24 h-24' />
+            <img title='Firebase' src='firebase.svg' className='w-24 h-24' />
         </div>
     </section>)
 }
