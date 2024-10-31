@@ -1,11 +1,22 @@
 .slider {
-    --duration: 4s;
+    --duration: 3s;
     background: #f1f5f9;
     padding: 1.5rem;
     border-radius: 0.375rem;
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
+    width: 431px;
+    margin: 0 auto 5rem auto;
+    break-inside: avoid;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @media not all and (min-width: 1024px) {
+        width: 100%;
+    }
 }
 
 .slides {
